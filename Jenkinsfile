@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    docker {
-      image 'alpine'
-    }
-
-  }
+  agent none
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'pwd'
       }
